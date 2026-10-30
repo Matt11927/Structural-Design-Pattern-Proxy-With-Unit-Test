@@ -41,7 +41,14 @@
     "git-widget-placeholder": "main"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestSongs.testProxyCacheById">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ProxyPatternWithUnitTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestSongs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProxyPatternWithUnitTest" />
       <option name="PACKAGE_NAME" value="" />
@@ -81,23 +88,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSongs.testSongSearchSongTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProxyPatternWithUnitTest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSongs" />
-      <option name="METHOD_NAME" value="testSongSearchSongTitle" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TestSongs.testProxyCacheById" />
         <item itemvalue="JUnit.TestSongs" />
         <item itemvalue="JUnit.TestSongs.testSongSearchSongId" />
         <item itemvalue="JUnit.TestSongs.testSongSearchSongAlbum" />
-        <item itemvalue="JUnit.TestSongs.testSongSearchSongTitle" />
       </list>
     </recent_temporary>
   </component>
