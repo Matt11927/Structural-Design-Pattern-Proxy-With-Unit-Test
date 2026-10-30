@@ -28,4 +28,16 @@ public class TestSongs {
         assertEquals(expectedSongAlbum,actualAlbum);
         assertEquals(expectedSongDuration,actualSongDuration);
     }
+
+    @Test
+    public void testSongSearchById() {
+
+        RealSongService service = new RealSongService();
+
+        Song song = new Song(1, "Dreams", "NF", "Perception", 258);
+
+        service.addSong(song);
+        Song actual = service.searchById(1);
+        assertSame(song, actual);
+    }
 }
