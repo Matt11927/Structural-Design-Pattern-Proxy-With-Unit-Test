@@ -41,7 +41,7 @@
     "git-widget-placeholder": "main"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestSongs.testSongSearchById">
+  <component name="RunManager" selected="JUnit.TestSongs.testSongSearchSongId">
     <configuration name="TestSongs.testSong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProxyPatternWithUnitTest" />
       <option name="PACKAGE_NAME" value="" />
@@ -62,8 +62,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestSongs.testSongSearchSongAlbum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProxyPatternWithUnitTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSongs" />
+      <option name="METHOD_NAME" value="testSongSearchSongAlbum" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSongs.testSongSearchSongId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProxyPatternWithUnitTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSongs" />
+      <option name="METHOD_NAME" value="testSongSearchSongId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSongs.testSongSearchSongTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProxyPatternWithUnitTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSongs" />
+      <option name="METHOD_NAME" value="testSongSearchSongTitle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestSongs.testSongSearchSongId" />
+        <item itemvalue="JUnit.TestSongs.testSongSearchSongAlbum" />
+        <item itemvalue="JUnit.TestSongs.testSongSearchSongTitle" />
         <item itemvalue="JUnit.TestSongs.testSongSearchById" />
         <item itemvalue="JUnit.TestSongs.testSong" />
       </list>

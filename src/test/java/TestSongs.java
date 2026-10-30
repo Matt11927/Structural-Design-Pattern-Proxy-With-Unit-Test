@@ -1,6 +1,9 @@
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertSame;
 
 public class TestSongs {
 
@@ -30,14 +33,41 @@ public class TestSongs {
     }
 
     @Test
-    public void testSongSearchById() {
+    public void testSongSearchSongId() {
 
         RealSongService service = new RealSongService();
 
         Song song = new Song(1, "Dreams", "NF", "Perception", 258);
 
         service.addSong(song);
-        Song actual = service.searchById(1);
-        assertSame(song, actual);
+        Song actual = service.searchSongId(1);
+        Song expected = song;
+        assertSame(expected, actual);
+    }
+
+    @Test
+    public void testSongSearchSongTitle() {
+
+        RealSongService service = new RealSongService();
+
+        Song song = new Song(1, "Dreams", "NF", "Perception", 258);
+
+        service.addSong(song);
+        List<Song> actual = service.searchSongTitle("Dreams");
+        Song expected = song;
+        assertSame(expected, actual.get(0));
+    }
+
+    @Test
+    public void testSongSearchSongAlbum() {
+
+        RealSongService service = new RealSongService();
+
+        Song song = new Song(1, "Dreams", "NF", "Perception", 258);
+
+        service.addSong(song);
+        List<Song> actual = service.searchSongAlbum("Perception");
+        Song expected = song;
+        assertSame(expected, actual.get(0));
     }
 }
