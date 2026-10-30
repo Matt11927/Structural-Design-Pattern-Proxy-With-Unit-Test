@@ -1,7 +1,5 @@
 import org.junit.jupiter.api.Test;
-
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertSame;
 
@@ -62,7 +60,6 @@ public class TestSongs {
     public void testSongSearchSongAlbum() {
 
         RealSongService service = new RealSongService();
-
         Song song = new Song(1, "Dreams", "NF", "Perception", 258);
 
         service.addSong(song);
@@ -70,4 +67,22 @@ public class TestSongs {
         Song expected = song;
         assertSame(expected, actual.get(0));
     }
+
+
+    @Test
+    public void testProxyCacheById() {
+
+        RealSongService service = new RealSongService();
+        Song song = new Song(1, "Dreams", "NF", "Perception", 258);
+
+        service.addSong(song);
+        SongProxy proxy = new SongProxy(service);
+
+        Song actual = proxy.searchSongId(1);
+        Song expected = proxy.searchSongId(1);
+
+        assertSame(expected, actual);
+    }
+
+
 }

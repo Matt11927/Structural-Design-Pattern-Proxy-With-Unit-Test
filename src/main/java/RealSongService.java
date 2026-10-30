@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.ArrayList;
 import java.util.List;
 
 public class RealSongService implements SongService {
@@ -12,10 +11,7 @@ public class RealSongService implements SongService {
     public Song searchSongId(Integer songID) {
         try {
             Thread.sleep(1000);
-        }
-        catch (InterruptedException e) {
-            System.out.println("Thread interrupted");
-        }
+        } catch (Exception e) {}
 
         for (Song song : songs) {
             if (song.getSongID() == songID) {
@@ -30,10 +26,7 @@ public class RealSongService implements SongService {
     public List<Song> searchSongTitle(String title) {
         try {
             Thread.sleep(1000);
-        }
-        catch (InterruptedException e) {
-            System.out.println("Thread interrupted");
-        }
+        } catch (Exception e) {}
 
         List<Song> results = new ArrayList<>();
 
@@ -50,10 +43,7 @@ public class RealSongService implements SongService {
     public List<Song> searchSongAlbum(String album) {
         try {
             Thread.sleep(1000);
-        }
-        catch (InterruptedException e) {
-            System.out.println("Thread interrupted");
-        }
+        } catch (Exception e) {}
 
         List<Song> results = new ArrayList<>();
 
